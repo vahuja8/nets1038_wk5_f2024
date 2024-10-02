@@ -17,7 +17,7 @@
 			<table style="width: 80%">
 				<tr>
 					<td>First Name</td>
-					<td><input type="text" name="firstname" /></td>
+					<td><input type="text" name="firstname" required /></td>
 				</tr>
 				<tr>
 					<td>Last Name</td>
@@ -26,6 +26,24 @@
 				<tr>
 					<td>UserName</td>
 					<td><input type="text" name="grade" /></td>
+				</tr>
+
+				<tr>
+					<td>Email Address: <input type="email" name="email" required
+						placeholder="Enter a valid email address"> Website: <input
+						type="url" name="website" required>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>Age: <input type="number" size="6" name="age" min="18"
+						max="50" value=""><br>
+						
+			 Satisfaction: <input
+						type="range" size="2" name="satisfaction" min="1" max="5"
+						value="3">
+					</td>
 				</tr>
 			</table>
 			<input type="submit" value="Submit" />

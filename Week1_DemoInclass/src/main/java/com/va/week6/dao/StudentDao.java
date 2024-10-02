@@ -16,13 +16,13 @@ public class StudentDao {
 		int result = 0;
 		Class.forName("com.mysql.cj.jdbc.Driver");
 
-		try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/week6", "root",
+		try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/week6", "fall2024",
 				"class123")) {
 			// prepared statements..
 			// week6 is schema/db name - change as per your db, "root" remains same , your
 			// pass as per ur db
 			PreparedStatement ps = connection.prepareStatement(INSERT_USERS_SQL);
-			ps.setInt(1, 2); // hardcoded value.. 
+			ps.setInt(1, 4); // hardcoded value.. 
 			ps.setString(2, student.getFirstname());
 			ps.setString(3, student.getLastname());
 			ps.setString(4, student.getGrade());
